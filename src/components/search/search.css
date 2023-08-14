@@ -1,0 +1,55 @@
+.hero{
+    height: 600px;
+    background: url('/public/hero-wallpaper.jpg') no-repeat right top;
+    background-size: 100% 770px;
+    width: 100%;
+    position: relative;
+}
+
+.hero-overlay{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-container{
+    max-width: 60%;
+    margin: auto;
+}
+
+.hero-content{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h1{
+    font-size: 3rem;
+    color: #fff;
+    z-index: 2;
+}
+
+.hero-content p{
+    color: #fff;
+    z-index: 2;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+.hero-search-form{
+z-index: 2;
+margin: 1rem 0.6rem 0 0;
+}
+
+.hero-search-form input{
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    font-size: 0.9rem;
+}

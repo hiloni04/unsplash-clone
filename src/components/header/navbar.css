@@ -1,0 +1,42 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo{
+    color: #000;
+}
+
+.logo h1{
+    font-size: 1.1rem;
+}
+
+.logo p{
+    font-size: 1rem;
+}
+
+.nav-search{
+    margin-left: 1.5rem;
+}
+
+.nav-search input{
+    padding: 0.7rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #eee;
+    width: 800px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.nav-search input:focus{
+    background: #fff;
+}

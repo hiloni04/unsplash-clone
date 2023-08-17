@@ -4,7 +4,9 @@ import Search from './components/search';
 import ImagesLayout from './components/imageLayout';
 
 
+
 function App() {
+  
   return (
     <div className="App">
 <Header/>

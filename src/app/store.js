@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import imagesReducer from '../features/images/imagesSlice';
+import pageReducer from '../features/page/pageSlice'
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    images: imagesReducer,
+    page: pageReducer
   },
 });
+
+export default store;

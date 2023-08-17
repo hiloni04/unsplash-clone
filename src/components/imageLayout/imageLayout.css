@@ -34,27 +34,32 @@
     transform: scale(1.05);
   } 
 
-/* .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 16px;
-    padding: 16px;
-  }
-  
-  .imgs {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
 
-  }
-  
-  .img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-  }
-  
-  .img:hover {
-    transform: scale(1.05);
-  } */
+
+  @media (min-width: 768px) {
+    .gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+    .imgs {
+        -webkit-column-width: 50%;
+        -moz-column-width: 50%;
+        column-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+
+    .imgs {
+        -webkit-column-width: 33%;
+        -moz-column-width: 33%;
+        column-width: 33%;
+    }
+}

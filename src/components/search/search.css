@@ -1,7 +1,7 @@
 .hero{
     height: 600px;
     background: url('/public/hero-wallpaper.jpg') no-repeat right top;
-    background-size: 100% 770px;
+    background-size: 100% auto;
     width: 100%;
     position: relative;
 }
@@ -52,4 +52,23 @@ margin: 1rem 0.6rem 0 0;
     border: none;
     color: #000;
     font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+        background-size: 100% auto;
+    }
+    
+    .hero-content {
+        height: auto;
+    }
+    
+    .hero-container {
+        max-width: 90%;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
 }

@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const initialState = {
   images: [],
-  searchQuery: '', // Add searchQuery field to the initial state
+  searchQuery: '', 
 };
 
 export const fetchImages = createAsyncThunk(
